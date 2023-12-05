@@ -29,15 +29,15 @@
         }
         public function update($id,$nombre,$apellido,$direccion,$nomrepresentante,$telefono,$curso,$fechanacimiento){
             $stament = $this->PDO->prepare("UPDATE `username` SET `nombre`='nombre',`apellido`='apellido',`direccion`='apellido',`nomrepresentante`='nomrepresentante',`telefono`='telefono',`curso`='curso',`fechanacimiento`='fechanacimiento'");
-            $stament->bindParam(":nombre",$nombre);
-            $stament->bindParam(":apellido",$apellido);
+            $stament->bindParam(":nombre",$nombre, ":apellido",$apellido, ":direccion",$direccion, ":nomrepresentante",$nomrepresentante, ":telefono",$telefono, ":curso",$curso, ":fechanacimiento",$fechanacimiento, ":id",$id);
+           /* $stament->bindParam(":apellido",$apellido);
             $stament->bindParam(":direccion",$direccion);
             $stament->bindParam(":nomrepresentante",$nomrepresentante);
             $stament->bindParam(":telefono",$telefono);
             $stament->bindParam(":curso",$curso);
             $stament->bindParam(":fechanacimiento",$fechanacimiento);
-            $stament->bindParam(":id",$id);
-            return ($stament->execute()) ? $id : false;
+            $stament->bindParam(":id",$id); */
+            return ($stament->execute()) ? $id : false; 
         }
         public function delete($id){
             $stament = $this->PDO->prepare("DELETE FROM username WHERE id = :id");

@@ -8,24 +8,20 @@ require_once("c://xampp/htdocs/tarea3/view/head/head.php");
         <label for="exampleInputEmail1" class="form-label">Nombre</label>
         <input type="text" name="nombre" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-    <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Apellido</label>
         <input type="text" name="apellido" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-    <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Direccion</label>
         <input type="text" name="direccion" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-    <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nombre del representante</label>
         <input type="text" name="nomrepresentante" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
-    <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Telefono</label>
         <input type="int" name="telefono" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="mb-3">
-            <label for="curso">Curso</label>
-            <select name="id" id="id" class="form-control">
+    </div>
+    <label for="exampleInputEmail1">Curso</label>
+            <select name="curso" curso="curso" class="form-control">
                 <option value="1ro">1ro</option>
                 <option value="2do">2ro</option>
                 <option value="3ro">3ro</option>
@@ -40,11 +36,9 @@ require_once("c://xampp/htdocs/tarea3/view/head/head.php");
                 <option value="2bc">2"BC"</option>
                 <option value="3bc">3"BC"</option>
             </select>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">fecha de nacimiento</label>
-            <input type="date" name="fechanacimiento" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
+        <label for="exampleInputEmail1" class="form-label">fecha de nacimiento</label>
+        <input type="date" name="fechanacimiento" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
 
         <button type="submit" class="btn btn-primary">Guardar</button>
         <a class="btn btn-danger" href="index.php">Cancelar</a>
