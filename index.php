@@ -4,7 +4,7 @@
 
 
 
-<a href="/tarea3/view/username/create.php" class="btn btn-primary">Agregar nuevo usuario</a>
+<a href="/tarea3/view/username/create.php" class="btn btn-primary">Agregar nuevo alumno</a>
 
 
 

@@ -4,8 +4,9 @@
     $obj = new usernameController();
     $rows = $obj->index();
 ?>
+<h2 class="text-center">Alumnos</h2>
 <div class="mb-3">
-    <a href="/tarea3/view/username/create.php" class="btn btn-primary">Agregar nuevo usuario</a>
+    <a href="/tarea3/view/username/create.php" class="btn btn-primary">Agregar nuevo alumno</a>
 </div>
 <table class="table">
     <thead>
