@@ -8,7 +8,7 @@
             $this->PDO = $con->conexion();
         }
         public function insertar($nombre,$apellido,$direccion,$nomrepresentante,$telefono,$curso,$fechanacimiento){
-            $stament = $this->PDO->prepare("INSERT INTO `username` VALUES (null,:nombre, :apellido,:direccion,:nomrepresentante:telefono,:curso,:fechanacimiento)");
+            $stament = $this->PDO->prepare("INSERT INTO `username` VALUES (null,:nombre, :apellido,:direccion,:nomrepresentante,:telefono,:curso,:fechanacimiento)");
             $stament->bindParam(":nombre",$nombre);
             $stament->bindParam(":apellido",$apellido);
             $stament->bindParam(":direccion",$direccion);
